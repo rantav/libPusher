@@ -10,7 +10,6 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		A35281C113F6E0E8000687C0 /* libMocky.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A35281BC13F6E0D8000687C0 /* libMocky.a */; };
 		A35281C413F6E179000687C0 /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A35281C313F6E179000687C0 /* TestHelper.m */; };
 		A35281D013F721A8000687C0 /* PTPusherConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = A35281CE13F721A8000687C0 /* PTPusherConnection.h */; };
 		A35281D113F721A8000687C0 /* PTPusherConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A35281CF13F721A8000687C0 /* PTPusherConnection.m */; };
@@ -78,27 +77,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A35281BB13F6E0D8000687C0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A35281B213F6E0D8000687C0 /* Mocky.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = Mocky;
-		};
-		A35281BD13F6E0D8000687C0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A35281B213F6E0D8000687C0 /* Mocky.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A3464E7E11F279020080B46B;
-			remoteInfo = Tests;
-		};
-		A35281BF13F6E0D8000687C0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A35281B213F6E0D8000687C0 /* Mocky.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A36FDBB411FFBB6E004A08F4;
-			remoteInfo = "Example Tests";
-		};
 		A3D1D3021158029F009A12AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -128,7 +106,6 @@
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* libPusher_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libPusher_Prefix.pch; sourceTree = "<group>"; };
 		A30790D911583B7200EBFFF8 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		A35281B213F6E0D8000687C0 /* Mocky.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mocky.xcodeproj; path = Mocky/Mocky.xcodeproj; sourceTree = "<group>"; };
 		A35281C213F6E179000687C0 /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
 		A35281C313F6E179000687C0 /* TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper.m; sourceTree = "<group>"; };
 		A35281CE13F721A8000687C0 /* PTPusherConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherConnection.h; sourceTree = "<group>"; };
@@ -222,7 +199,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A35281C113F6E0E8000687C0 /* libMocky.a in Frameworks */,
 				A3A1A112115814D0001EF877 /* OCHamcrest.framework in Frameworks */,
 				A3A1A20111581782001EF877 /* CFNetwork.framework in Frameworks */,
 				A3A1A20211581782001EF877 /* Foundation.framework in Frameworks */,
@@ -314,16 +290,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A35281B313F6E0D8000687C0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A35281BC13F6E0D8000687C0 /* libMocky.a */,
-				A35281BE13F6E0D8000687C0 /* Tests.octest */,
-				A35281C013F6E0D8000687C0 /* Example Tests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		A35281D813F73C42000687C0 /* Event Listeners */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,7 +371,6 @@
 			isa = PBXGroup;
 			children = (
 				A3AC28C513F77000001C4808 /* TouchJSON */,
-				A35281B213F6E0D8000687C0 /* Mocky.xcodeproj */,
 				A3CDE3B811C93E460051777E /* ZTWebSocket */,
 				A3D1D0A01157CC68009A12AD /* AsyncSocket */,
 			);
@@ -585,12 +550,6 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A35281B313F6E0D8000687C0 /* Products */;
-					ProjectRef = A35281B213F6E0D8000687C0 /* Mocky.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* SampleApp */,
@@ -599,30 +558,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		A35281BC13F6E0D8000687C0 /* libMocky.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libMocky.a;
-			remoteRef = A35281BB13F6E0D8000687C0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A35281BE13F6E0D8000687C0 /* Tests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = Tests.octest;
-			remoteRef = A35281BD13F6E0D8000687C0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A35281C013F6E0D8000687C0 /* Example Tests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Example Tests.octest";
-			remoteRef = A35281BF13F6E0D8000687C0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
