@@ -48,11 +48,17 @@
   [super finish];
   
   authorized = ([(NSHTTPURLResponse *)URLResponse statusCode] == 200);
-  authorizationData = [[CJSONDeserializer deserializer] deserialize:responseData error:nil];
+  self.authorizationData = [[CJSONDeserializer deserializer] deserialize:responseData error:nil];
 
   if (self.completionHandler) {
     self.completionHandler(self);
   }
+}
+
+- (void)dealloc {
+  self.completionHandler = nil;
+  self.authorizationData = nil;
+  [super dealloc];
 }
 
 @end
