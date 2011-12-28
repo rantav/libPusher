@@ -59,8 +59,6 @@
   // Common modes instead of default so it won't stall uiscrollview scrolling
   [URLConnection scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
   [URLConnection start];
-  
-  [[NSRunLoop currentRunLoop] run];
 }
 
 - (void)finish;
