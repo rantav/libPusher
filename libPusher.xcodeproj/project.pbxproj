@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		259307EF14AAFE47007D2533 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 259307EB14AAFE47007D2533 /* CHANGELOG.md */; };
+		259307F014AAFE47007D2533 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 259307ED14AAFE47007D2533 /* JSONKit.m */; };
+		259307F114AAFE47007D2533 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 259307EE14AAFE47007D2533 /* README.md */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		A35281C413F6E179000687C0 /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A35281C313F6E179000687C0 /* TestHelper.m */; };
 		A35281D013F721A8000687C0 /* PTPusherConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = A35281CE13F721A8000687C0 /* PTPusherConnection.h */; };
@@ -39,17 +42,11 @@
 		A3AC28C313F76C51001C4808 /* PTPusherChannelAuthorizationOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = A3AC28C113F76C50001C4808 /* PTPusherChannelAuthorizationOperation.h */; };
 		A3AC28C413F76C51001C4808 /* PTPusherChannelAuthorizationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AC28C213F76C50001C4808 /* PTPusherChannelAuthorizationOperation.m */; };
 		A3AC28D513F7701B001C4808 /* CDataScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = A3AC28C613F7701B001C4808 /* CDataScanner.h */; };
-		A3AC28D613F7701B001C4808 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AC28C713F7701B001C4808 /* CDataScanner.m */; };
 		A3AC28D713F7701B001C4808 /* CDataScanner_Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A3AC28C913F7701B001C4808 /* CDataScanner_Extensions.h */; };
-		A3AC28D813F7701B001C4808 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AC28CA13F7701B001C4808 /* CDataScanner_Extensions.m */; };
 		A3AC28D913F7701B001C4808 /* NSDictionary_JSONExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A3AC28CB13F7701B001C4808 /* NSDictionary_JSONExtensions.h */; };
-		A3AC28DA13F7701B001C4808 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AC28CC13F7701B001C4808 /* NSDictionary_JSONExtensions.m */; };
 		A3AC28DB13F7701B001C4808 /* CJSONDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = A3AC28CE13F7701B001C4808 /* CJSONDeserializer.h */; };
-		A3AC28DC13F7701B001C4808 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AC28CF13F7701B001C4808 /* CJSONDeserializer.m */; };
 		A3AC28DD13F7701B001C4808 /* CJSONScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = A3AC28D013F7701B001C4808 /* CJSONScanner.h */; };
-		A3AC28DE13F7701B001C4808 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AC28D113F7701B001C4808 /* CJSONScanner.m */; };
 		A3AC28DF13F7701B001C4808 /* CJSONSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = A3AC28D213F7701B001C4808 /* CJSONSerializer.h */; };
-		A3AC28E013F7701B001C4808 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AC28D313F7701B001C4808 /* CJSONSerializer.m */; };
 		A3AC28E113F7701B001C4808 /* JSONRepresentation.h in Headers */ = {isa = PBXBuildFile; fileRef = A3AC28D413F7701B001C4808 /* JSONRepresentation.h */; };
 		A3C8EA1114216EF1000E4D81 /* ZTWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = A3C8EA0F14216EF1000E4D81 /* ZTWebSocket.h */; };
 		A3C8EA1214216EF1000E4D81 /* ZTWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C8EA1014216EF1000E4D81 /* ZTWebSocket.m */; };
@@ -103,6 +100,10 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		259307EB14AAFE47007D2533 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		259307EC14AAFE47007D2533 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		259307ED14AAFE47007D2533 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		259307EE14AAFE47007D2533 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* libPusher_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libPusher_Prefix.pch; sourceTree = "<group>"; };
 		A30790D911583B7200EBFFF8 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -253,6 +254,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		259307EA14AAFE47007D2533 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				259307EB14AAFE47007D2533 /* CHANGELOG.md */,
+				259307EC14AAFE47007D2533 /* JSONKit.h */,
+				259307ED14AAFE47007D2533 /* JSONKit.m */,
+				259307EE14AAFE47007D2533 /* README.md */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
@@ -370,6 +382,7 @@
 		A3D1D0991157CC3F009A12AD /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				259307EA14AAFE47007D2533 /* JSONKit */,
 				A3AC28C513F77000001C4808 /* TouchJSON */,
 				A3CDE3B811C93E460051777E /* ZTWebSocket */,
 				A3D1D0A01157CC68009A12AD /* AsyncSocket */,
@@ -567,6 +580,8 @@
 				A3D1D2891157FA30009A12AD /* MainWindow.xib in Resources */,
 				A3D1D28B1157FA30009A12AD /* PusherEventsViewController.xib in Resources */,
 				A3FE41CC11811161009CF5D7 /* NewEventViewController.xib in Resources */,
+				259307EF14AAFE47007D2533 /* CHANGELOG.md in Resources */,
+				259307F114AAFE47007D2533 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +622,7 @@
 				A39E238913F7E6AB0083CAD7 /* PusherPresenceEventsViewController.m in Sources */,
 				A3698FF213FF0A7A005CF130 /* NSMutableURLRequest+BasicAuth.m in Sources */,
 				A3698FFF13FF200C005CF130 /* NSData+Base64.m in Sources */,
+				259307F014AAFE47007D2533 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,12 +654,6 @@
 				A3AC28B713F75530001C4808 /* PTURLRequestOperation.m in Sources */,
 				A3AC28C013F75BF1001C4808 /* PusherExampleMenuViewController.m in Sources */,
 				A3AC28C413F76C51001C4808 /* PTPusherChannelAuthorizationOperation.m in Sources */,
-				A3AC28D613F7701B001C4808 /* CDataScanner.m in Sources */,
-				A3AC28D813F7701B001C4808 /* CDataScanner_Extensions.m in Sources */,
-				A3AC28DA13F7701B001C4808 /* NSDictionary_JSONExtensions.m in Sources */,
-				A3AC28DC13F7701B001C4808 /* CJSONDeserializer.m in Sources */,
-				A3AC28DE13F7701B001C4808 /* CJSONScanner.m in Sources */,
-				A3AC28E013F7701B001C4808 /* CJSONSerializer.m in Sources */,
 				A3C8EA1214216EF1000E4D81 /* ZTWebSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
