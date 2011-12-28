@@ -57,7 +57,6 @@
 
 - (void)dealloc {
   self.completionHandler = nil;
-  self.authorizationData = nil;
   [super dealloc];
 }
 
